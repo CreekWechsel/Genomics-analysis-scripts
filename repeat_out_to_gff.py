@@ -9,9 +9,9 @@ def parse_arguments():
         formatter_class=argparse.RawTextHelpFormatter,
         epilog="""
 Example:
-  python repeat_to_gff.py --in ./trf.dat --out trf.gff
-  python repeat_to_gff.py --in ./RepeatMasker.out --out RepeatMasker.gff
-  python repeat_to_gff.py --in ./Proteinmask.annot --out Proteinmask.gff
+  python repeat_to_gff.py --in ./trf.dat --out ./trf.gff
+  python repeat_to_gff.py --in ./RepeatMasker.out --out ./RepeatMasker.gff
+  python repeat_to_gff.py --in ./Proteinmask.annot --out ./Proteinmask.gff
         """
     )
     parser.add_argument('--in', dest='input_file', required=True,
